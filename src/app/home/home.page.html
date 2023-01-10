@@ -1,0 +1,63 @@
+<ion-toolbar class="ion-text-center">
+  <h2>PRUEBA UNO</h2>
+</ion-toolbar>
+
+<ion-content>
+  <ion-grid >
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h2> Bienvenido </h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h4> Aquí comienza todo </h4>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6"></ion-col>
+
+      <ion-item>
+        <ion-label position="stacked">Usuario</ion-label>
+        <ion-input
+        type="text" placeholder="Usuario" minlength="3" maxlength="8">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Contraseña</ion-label>
+        <ion-input type="password" placeholder="Contraseña" minlength="4"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" [routerLink]="['/catalogo']">
+          Ingresar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" fill="clear" [routerLink]="['/registro']">
+          Crear una cuenta gratis
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" fill="clear" color="danger" [routerLink]="['/recupera-contra']">
+          ¿Olvidó su contraseña ?
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
